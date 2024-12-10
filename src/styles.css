@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #F7F7F7;
+}
+
+@font-face {
+  font-family: 'UnicaOne';
+  src: url("./assets/fonts/UnicaOne.woff2") format('woff2'),
+       url("./assets/fonts/UnicaOne.otf") format('opentype'),
+       url("./assets/fonts/UnicaOne.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text {
+  font-family: "UnicaOne", sans-serif;
+}
+
+#heading-0 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+  border-bottom: 1px solid #EEEEEE;
+  padding-bottom: 5px;
+}
+
+#heading-1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333333;
+  border-bottom: 1px solid #EEEEEE;
+  padding-bottom: 5px;
+}
+
+#heading-2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+#heading-3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+
+p {
+  font-size: 16px;
+  word-break: break-word;
+  line-height: 1.75;
+  font-weight: 400;
+  color: #333333;
+}
+
+#currentAnchor>div>pre>code>span.command-line-prompt>span {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

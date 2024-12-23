@@ -1,0 +1,33 @@
+<div class="footer box" nz-flex nzJustify="center" nzAlign="center">
+  <div class="footer" nz-flex nzJustify="center" nzAlign="start" nzGap="large" [ngStyle]="{'width':'100%'}">
+    <div style="min-width: 200px" nz-flex [nzVertical]="true" nzAlign="start" nzGap="small">
+      <span nz-typography>联系方式</span>
+      <span nz-typography class="text" nz-popover [nzPopoverContent]="qqQRCode" nzPopoverPlacement="top">
+        <nz-icon nzType="qq" nzTheme="outline"></nz-icon>
+        &nbsp;573844716
+      </span>
+      <ng-template #qqQRCode>
+        <img width="250px" height="250px" src="" alt="qq">
+      </ng-template>
+      <span nz-typography class="text" (click)="github()">
+        <nz-icon nzType="github" nzTheme="outline"></nz-icon>
+        &nbsp;Mittlebron
+      </span>
+      <span nz-typography class="text" (click)="mailto()">
+        <nz-icon nzType="mail" nzTheme="outline"></nz-icon>
+        &nbsp;{{email}}
+      </span>
+    </div>
+    <div style="min-width: 200px" nz-flex [nzVertical]="true" nzAlign="start" nzGap="small">
+      <span nz-typography nz-flex nzAlign="center">
+        <span nz-typography>© 2024 Mittlebron
+          <nz-avatar style="padding-bottom: 2px" [nzSize]="16"
+                     nzSrc="https://image.itjourney.top/i/2024/08/31/u8flg1-1.png" nzShape="square">
+          </nz-avatar>
+          <nz-divider nzType="vertical"></nz-divider>
+        </span>
+      </span>
+      <a nz-typography class="text" href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2023017018号</a>
+    </div>
+  </div>
+</div>

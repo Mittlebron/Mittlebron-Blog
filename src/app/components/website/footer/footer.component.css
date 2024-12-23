@@ -1,0 +1,29 @@
+.footer {
+  width: 40%;
+}
+
+.footer box {
+  width: 100%;
+  min-height: 100px;
+  background-color: #F0F2F5;
+  border-top: 1px solid lightgrey;
+  padding: 24px 12px 48px 12px;
+}
+
+.text {
+  color: #000;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.text:hover {
+  color: grey;
+}
+
+.ant-typography {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}

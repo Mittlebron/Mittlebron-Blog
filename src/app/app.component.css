@@ -1,130 +1,21 @@
-:host {
-  display: flex;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.app-layout {
-  height: 100vh;
-}
-
-.menu-sidebar {
-  position: relative;
-  z-index: 10;
+.layout {
   min-height: 100vh;
-  box-shadow: 2px 0 6px rgba(0,21,41,.35);
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
-.header-trigger {
-  height: 64px;
-  padding: 20px 24px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: all .3s,padding 0s;
-}
-
-.trigger:hover {
-  color: #1890ff;
-}
-
-.sidebar-logo {
-  position: relative;
-  height: 64px;
-  padding-left: 24px;
-  overflow: hidden;
-  line-height: 64px;
-  background: #001529;
-  transition: all .3s;
-}
-
-.sidebar-logo img {
-  display: inline-block;
-  height: 32px;
-  width: 32px;
-  vertical-align: middle;
-}
-
-.sidebar-logo h1 {
-  display: inline-block;
-  margin: 0 0 0 20px;
-  color: #fff;
-  font-weight: 600;
-  font-size: 14px;
-  font-family: Avenir,Helvetica Neue,Arial,Helvetica,sans-serif;
-  vertical-align: middle;
-}
-
-nz-header {
-  padding: 0;
-  width: 100%;
-  z-index: 2;
-}
-
-.app-header {
-  position: relative;
-  height: 64px;
-  padding: 0;
-  background: #fff;
-  box-shadow: 0 1px 4px rgba(0,21,41,.08);
-}
-
-nz-content {
-  margin-top: 12px;
-  display: flex;
-  justify-content: center;
-  overflow: auto;
-  z-index: 2;
-  min-height: 100%;
-  background-color: #F7F7F7;
-}
-
-/* 主要内容窗口 */
-.inner-content {
-  padding: 24px;
-  background: #fff;
-  width: 55%;
-  height: fit-content;
-  border-radius: 6px;
-}
-
-/* 侧边栏 */
-.side_bar {
-  width: 16%;
-  margin-left: 1%;
-  border-radius: 6px;
-  height: 100%;
-}
-
-.about_box {
-  width: 100%;
-  height: 40vh;
-  background: #fff;
-  border-radius: 6px;
-}
-
-.head {
-  margin-left: 20px;
-}
-
-.blog_title {
-  margin-left: 10px;
-  margin-bottom: 0 !important;
-}
-
-.title {
-  margin-left: 10px;
-}
-
-.background-overlay {
+.nz-header {
   position: fixed;
- /* 固定位置，不随滚动条滚动 */
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(128,128,128,0.5);
-  z-index: -1;
+  width: 100%;
+  background: #fff;
+  z-index: 999;
 }
 
+.nz-content {
+  margin-top: 64px;
+}
 
+.nz-footer {
+  text-align: center;
+  padding: 0;
+}

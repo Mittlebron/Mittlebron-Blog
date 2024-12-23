@@ -1,2 +1,11 @@
-<p>welcome works!</p>
-<button nz-button nzType="primary">Primary</button>
+<div class="welcome" nz-flex [nzVertical]="true" nzAlign="center">
+  <span>title</span>
+  <div class="content" nz-flex nzJustify="center" nzAlign="start" nzGap="middle"
+  [ngStyle]="{'width': '100%'}">
+    <nz-spin [nzTip]="'loading'" [nzSpinning]="true" @QuickUp>
+      <div nz-flex nzGap="middle" [nzVertical]="true">
+        <span>文章</span>
+      </div>
+    </nz-spin>
+  </div>
+</div>
